@@ -1,20 +1,17 @@
 package com.inception.paycrypt.Dto;
 
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class TokenDto {
+
     private String accessToken;
 
-    public TokenDto(String accessToken) {
-        this.accessToken = accessToken;
-    }
-
-    public TokenDto() {
-    }
-
-    public String getAccessToken() {
-        return accessToken;
-    }
-
-    public void setAccessToken(String accessToken) {
-        this.accessToken = accessToken;
-    }
 }
