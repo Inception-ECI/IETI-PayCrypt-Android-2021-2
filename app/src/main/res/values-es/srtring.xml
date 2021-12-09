@@ -1,10 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">paycrypt</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="app_name" translatable="false">paycrypt</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">Login</string>
-    <string name="second_fragment_label">Home</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
@@ -13,8 +13,7 @@
     <string name="login">Login</string>
     <string name="register">Register</string>
     <string name="title">Login Form</string>
-    <string name="invalid_email">Invalid Email</string>
+    <string name="invalid_email" >Invalid Email</string>
     <string name="invalid_password">The password cannot be empty</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Paycrypt in android is on develop!</string>
+
 </resources>
