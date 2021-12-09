@@ -62,7 +62,7 @@ public class LoginFragment extends Fragment {
     private void sendAuthRequest(){
         Retrofit retrofit = RetrofitGenerator.getInstance(storage);
         AuthService authService = retrofit.create(AuthService.class);
-        LoginDto loginDto = new LoginDto("user.email@email.com","lacontraseña");
+        LoginDto loginDto = new LoginDto(binding.inputUsername.getText().toString(),binding.inputPassword.getText().toString());
         Action1<TokenDto> successAction = tokenDto -> onSuccess(tokenDto.getAccessToken());
         Action1<Throwable> failedAction = throwable -> Log.e("Developer","Auth error",throwable);
         authService.auth(loginDto)
@@ -74,6 +74,7 @@ public class LoginFragment extends Fragment {
         Log.d("Developer","TokenDto"+token);
         binding.textviewFirst.setText(token);
         storage.saveToken(token);
+        NavHostFragment.findNavController(LoginFragment.this).navigate(R.id.action_FirstFragment_to_SecondFragment);
     }
 
     private boolean validForm(){
